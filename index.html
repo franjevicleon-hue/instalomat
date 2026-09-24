@@ -27,9 +27,8 @@
 <link rel="manifest" href="site.webmanifest">
 <link rel="preload" as="image" href="assets/poster-1080.webp" media="(min-aspect-ratio: 4/5)" fetchpriority="high">
 <link rel="preload" as="image" href="assets/poster-portrait.webp" media="(max-aspect-ratio: 4/5)" fetchpriority="high">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,500..800&family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/ibmplexsans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -59,6 +58,16 @@
 }
 </script>
 <style>
+@font-face { font-family: 'Archivo'; font-style: normal; font-weight: 500 800; font-stretch: 100% 125%; font-display: swap; src: url(assets/fonts/archivo-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'Archivo'; font-style: normal; font-weight: 500 800; font-stretch: 100% 125%; font-display: swap; src: url(assets/fonts/archivo-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url(assets/fonts/ibmplexmono-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'IBM Plex Mono'; font-style: normal; font-weight: 500; font-display: swap; src: url(assets/fonts/ibmplexmono-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'IBM Plex Sans'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(assets/fonts/ibmplexsans-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'IBM Plex Sans'; font-style: normal; font-weight: 400; font-stretch: 100%; font-display: swap; src: url(assets/fonts/ibmplexsans-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'IBM Plex Sans'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(assets/fonts/ibmplexsans-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'IBM Plex Sans'; font-style: normal; font-weight: 500; font-stretch: 100%; font-display: swap; src: url(assets/fonts/ibmplexsans-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: 'IBM Plex Sans'; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url(assets/fonts/ibmplexsans-latin-ext.woff2) format('woff2'); unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+@font-face { font-family: 'IBM Plex Sans'; font-style: normal; font-weight: 600; font-stretch: 100%; font-display: swap; src: url(assets/fonts/ibmplexsans-latin.woff2) format('woff2'); unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 :root{
   --ink:#0B1316;--ink-2:#0D171B;--ink-3:#101D21;--ink-4:#08100F;
   --paper:#F2EDE4;--paper-2:#E8E0D2;--paper-3:#DDD3C2;
@@ -337,7 +346,7 @@ section{position:relative}
 /* footer */
 .ftr{background:var(--ink-4);border-top:3px solid var(--copper);padding:64px 0 32px;color:var(--text-2);font-size:.9375rem}
 .ftr-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:40px}
-.ftr h4{margin:0 0 16px;font:500 .75rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--copper-hi)}
+.ftr h3{margin:0 0 16px;font:500 .75rem/1 var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--copper-hi)}
 .ftr ul{list-style:none;margin:0;padding:0;display:grid;gap:10px}
 .ftr a{transition:color .25s}
 @media (hover:hover){.ftr a:hover{color:var(--text)}}
@@ -381,7 +390,7 @@ section{position:relative}
 
 <header class="hdr" id="hdr">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Instalomat, početak stranice">
+    <a class="brand" href="#top">
       <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3.5 56.7 17.75v28.5L32 60.5 7.3 46.25v-28.5Z" fill="#C97A45"/><path d="M32 15.5c-5.6 7.4-10.6 13.9-10.6 20.2a10.6 10.6 0 0 0 21.2 0c0-6.3-5-12.8-10.6-20.2Z" fill="#0B1316"/><path d="M27.2 37.4a5 5 0 0 0 4.3 4.9" fill="none" stroke="#C97A45" stroke-width="2.2" stroke-linecap="round"/></svg>
       <span class="brand-name"><b>Instalomat</b><small>Vodoinstalater · Zagreb</small></span>
     </a>
@@ -422,7 +431,7 @@ section{position:relative}
     <div class="wrap">
       <p class="label fade-in" style="--d:.1s">Vodoinstalater · Maksimir, Zagreb</p>
       <h1 aria-label="Voda tamo gdje joj je mjesto."><span class="w"><span style="--i:0">Voda</span></span> <span class="w"><span style="--i:1">tamo</span></span> <span class="w"><span style="--i:2">gdje</span></span> <span class="w"><span style="--i:3">joj</span></span> <span class="w"><span style="--i:4">je</span></span> <span class="w"><span style="--i:5"><em>mjesto.</em></span></span></h1>
-      <p class="lead fade-in" style="--d:.65s">Curenja, slavine, vodokotlići, sanitarije, cijevi i odvodi. Nazovite, opišite problem i dogovorimo termin.</p>
+      <p class="lead">Curenja, slavine, vodokotlići, sanitarije, cijevi i odvodi. Nazovite, opišite problem i dogovorimo termin.</p>
       <div class="cta-row fade-in" style="--d:.8s">
         <a class="btn btn-copper" href="tel:+385996905434"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2Z"/></svg>Nazovite 099 690 5434</a>
         <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Vodoinstalater%20Zagreb%20-%20Instalomat%2C%20Ul.%20Rebar%2083%2C%2010000%20Zagreb" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11 22 2l-9 19-2-8-8-2Z"/></svg>Upute do nas</a>
@@ -463,8 +472,8 @@ section{position:relative}
       </div>
     </div>
     <div class="about-media" aria-hidden="true">
-      <div class="shot shot-a" data-speed="0.07"><img src="assets/valve.webp" width="1200" height="1000" alt="" loading="lazy" decoding="async"></div>
-      <div class="shot shot-b" data-speed="-0.1"><img src="assets/drop.webp" width="800" height="1000" alt="" loading="lazy" decoding="async"></div>
+      <div class="shot shot-a" data-speed="0.07"><img src="assets/valve.webp" srcset="assets/valve-600.webp 600w, assets/valve.webp 1200w" sizes="(max-width: 860px) 82vw, 40vw" width="1200" height="1000" alt="" loading="lazy" decoding="async"></div>
+      <div class="shot shot-b" data-speed="-0.1"><img src="assets/drop.webp" srcset="assets/drop-400.webp 400w, assets/drop.webp 800w" sizes="(max-width: 860px) 46vw, 22vw" width="800" height="1000" alt="" loading="lazy" decoding="async"></div>
       <div class="tag-card" data-speed="-0.2"><small>Adresa</small><b>Ul. Rebar 83</b><span>Maksimir, Zagreb</span></div>
     </div>
   </div>
@@ -590,7 +599,7 @@ section{position:relative}
           </div>
         </div>
         <div class="map" id="map">
-          <img src="assets/gauge.webp" width="1200" height="700" alt="" loading="lazy" decoding="async">
+          <img src="assets/gauge.webp" srcset="assets/gauge-600.webp 600w, assets/gauge.webp 1200w" sizes="(max-width: 860px) 100vw, 56vw" width="1200" height="700" alt="" loading="lazy" decoding="async">
           <button class="map-btn" id="mapBtn" type="button"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.5"/></svg>Prikaži kartu</button>
           <span class="map-note">Karta se učitava s Google karata tek na klik.</span>
         </div>
@@ -618,14 +627,14 @@ section{position:relative}
   <div class="wrap">
     <div class="ftr-grid">
       <div>
-        <a class="brand" href="#top" aria-label="Instalomat, na vrh stranice">
+        <a class="brand" href="#top">
           <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 3.5 56.7 17.75v28.5L32 60.5 7.3 46.25v-28.5Z" fill="#C97A45"/><path d="M32 15.5c-5.6 7.4-10.6 13.9-10.6 20.2a10.6 10.6 0 0 0 21.2 0c0-6.3-5-12.8-10.6-20.2Z" fill="#08100F"/><path d="M27.2 37.4a5 5 0 0 0 4.3 4.9" fill="none" stroke="#C97A45" stroke-width="2.2" stroke-linecap="round"/></svg>
           <span class="brand-name"><b>Instalomat</b><small>Vodoinstalater · Zagreb</small></span>
         </a>
         <p>Vodoinstalater iz Maksimira. Curenja, slavine, vodokotlići, sanitarije, cijevi i odvodi.</p>
       </div>
       <div>
-        <h4>Kontakt</h4>
+        <h3>Kontakt</h3>
         <ul>
           <li><a href="tel:+385996905434">099 690 5434</a></li>
           <li><a href="sms:+385996905434">SMS poruka</a></li>
@@ -633,7 +642,7 @@ section{position:relative}
         </ul>
       </div>
       <div>
-        <h4>Radno vrijeme</h4>
+        <h3>Radno vrijeme</h3>
         <ul>
           <li>Pon do pet: 07:00 do 15:00</li>
           <li>Subota: 07:00 do 13:00</li>
@@ -641,7 +650,7 @@ section{position:relative}
         </ul>
       </div>
       <div>
-        <h4>Stranica</h4>
+        <h3>Stranica</h3>
         <ul>
           <li><a href="#usluge">Usluge</a></li>
           <li><a href="#o-nama">O nama</a></li>
