@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://franjevicleon-hue.github.io/instalomat/sitemap.xml
+# Opis za AI asistente: https://franjevicleon-hue.github.io/instalomat/llms.txt

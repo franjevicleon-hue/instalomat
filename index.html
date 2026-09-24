@@ -7,6 +7,8 @@
 <meta name="description" content="Instalomat, vodoinstalater iz Maksimira (Ul. Rebar 83, Zagreb). Curenja, slavine, vodokotlići, sanitarije, cijevi i odvodi. Pon do pet 7 do 15 h, sub 7 do 13 h. Nazovite 099 690 5434.">
 <link rel="canonical" href="https://franjevicleon-hue.github.io/instalomat/">
 <meta name="theme-color" content="#0B1316">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; font-src 'self'; img-src 'self' data:; media-src 'self'; frame-src https://www.google.com https://maps.google.com; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <meta name="format-detection" content="telephone=no">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="hr_HR">
@@ -15,6 +17,7 @@
 <meta property="og:description" content="Curenja, slavine, vodokotlići, cijevi i odvodi. Ul. Rebar 83, Zagreb. Nazovite 099 690 5434.">
 <meta property="og:url" content="https://franjevicleon-hue.github.io/instalomat/">
 <meta property="og:image" content="https://franjevicleon-hue.github.io/instalomat/assets/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta property="og:image:alt" content="Instalomat, vodoinstalater Zagreb: bakrene cijevi i mjedeni ventil na tamnim pločicama">
@@ -23,38 +26,151 @@
 <meta name="twitter:description" content="Curenja, slavine, vodokotlići, cijevi i odvodi. Nazovite 099 690 5434.">
 <meta name="twitter:image" content="https://franjevicleon-hue.github.io/instalomat/assets/og.jpg">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/icon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 <link rel="manifest" href="site.webmanifest">
-<link rel="preload" as="image" href="assets/poster-1080.webp" media="(min-aspect-ratio: 4/5)" fetchpriority="high">
+<link rel="preload" as="image" href="assets/poster-1080.webp" imagesrcset="assets/poster-720.webp 1280w, assets/poster-1080.webp 1920w" imagesizes="100vw" media="(min-aspect-ratio: 4/5)" fetchpriority="high">
 <link rel="preload" as="image" href="assets/poster-portrait.webp" media="(max-aspect-ratio: 4/5)" fetchpriority="high">
 <link rel="preload" href="assets/fonts/archivo-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="assets/fonts/ibmplexsans-latin.woff2" as="font" type="font/woff2" crossorigin>
 <script type="application/ld+json">
 {
-  "@context": "https://schema.org",
-  "@type": "Plumber",
-  "@id": "https://franjevicleon-hue.github.io/instalomat/#business",
-  "name": "Instalomat",
-  "alternateName": "Vodoinstalater Zagreb - Instalomat",
-  "url": "https://franjevicleon-hue.github.io/instalomat/",
-  "image": "https://franjevicleon-hue.github.io/instalomat/assets/og.jpg",
-  "logo": "https://franjevicleon-hue.github.io/instalomat/assets/icon-512.png",
-  "telephone": "+385996905434",
-  "address": {
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "WebSite",
+   "@id": "https://franjevicleon-hue.github.io/instalomat/#website",
+   "url": "https://franjevicleon-hue.github.io/instalomat/",
+   "name": "Instalomat",
+   "inLanguage": "hr-HR",
+   "publisher": {
+    "@id": "https://franjevicleon-hue.github.io/instalomat/#business"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://franjevicleon-hue.github.io/instalomat/#webpage",
+   "url": "https://franjevicleon-hue.github.io/instalomat/",
+   "name": "Vodoinstalater Zagreb, Maksimir | Instalomat",
+   "isPartOf": {
+    "@id": "https://franjevicleon-hue.github.io/instalomat/#website"
+   },
+   "about": {
+    "@id": "https://franjevicleon-hue.github.io/instalomat/#business"
+   },
+   "primaryImageOfPage": "https://franjevicleon-hue.github.io/instalomat/assets/og.jpg",
+   "inLanguage": "hr-HR",
+   "breadcrumb": {
+    "@id": "https://franjevicleon-hue.github.io/instalomat/#breadcrumb"
+   }
+  },
+  {
+   "@type": "BreadcrumbList",
+   "@id": "https://franjevicleon-hue.github.io/instalomat/#breadcrumb",
+   "itemListElement": [
+    {
+     "@type": "ListItem",
+     "position": 1,
+     "name": "Instalomat",
+     "item": "https://franjevicleon-hue.github.io/instalomat/"
+    }
+   ]
+  },
+  {
+   "@type": "Plumber",
+   "@id": "https://franjevicleon-hue.github.io/instalomat/#business",
+   "name": "Instalomat",
+   "alternateName": "Vodoinstalater Zagreb - Instalomat",
+   "url": "https://franjevicleon-hue.github.io/instalomat/",
+   "image": "https://franjevicleon-hue.github.io/instalomat/assets/og.jpg",
+   "logo": "https://franjevicleon-hue.github.io/instalomat/assets/icon-512.png",
+   "telephone": "+385996905434",
+   "address": {
     "@type": "PostalAddress",
     "streetAddress": "Ulica Rebar 83",
     "addressLocality": "Zagreb",
     "addressRegion": "Maksimir",
     "postalCode": "10000",
     "addressCountry": "HR"
-  },
-  "geo": { "@type": "GeoCoordinates", "latitude": 45.81956, "longitude": 16.00206 },
-  "hasMap": "https://www.google.com/maps/search/?api=1&query=Vodoinstalater%20Zagreb%20-%20Instalomat%2C%20Ul.%20Rebar%2083%2C%20Zagreb",
-  "areaServed": { "@type": "City", "name": "Zagreb" },
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"], "opens": "07:00", "closes": "15:00" },
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "07:00", "closes": "13:00" }
-  ]
+   },
+   "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 45.81956,
+    "longitude": 16.00206
+   },
+   "hasMap": "https://www.google.com/maps/search/?api=1&query=Vodoinstalater%20Zagreb%20-%20Instalomat%2C%20Ul.%20Rebar%2083%2C%20Zagreb",
+   "areaServed": {
+    "@type": "City",
+    "name": "Zagreb"
+   },
+   "openingHoursSpecification": [
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+     ],
+     "opens": "07:00",
+     "closes": "15:00"
+    },
+    {
+     "@type": "OpeningHoursSpecification",
+     "dayOfWeek": "Saturday",
+     "opens": "07:00",
+     "closes": "13:00"
+    }
+   ],
+   "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Vodoinstalaterske usluge",
+    "itemListElement": [
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Curenja i kvarovi",
+       "serviceType": "Vodoinstalaterski radovi"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Slavine i vodokotlići",
+       "serviceType": "Vodoinstalaterski radovi"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Sanitarije",
+       "serviceType": "Vodoinstalaterski radovi"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Vodovodne cijevi",
+       "serviceType": "Vodoinstalaterski radovi"
+      }
+     },
+     {
+      "@type": "Offer",
+      "itemOffered": {
+       "@type": "Service",
+       "name": "Odvodi",
+       "serviceType": "Vodoinstalaterski radovi"
+      }
+     }
+    ]
+   }
+  }
+ ]
 }
 </script>
 <style>
@@ -417,7 +533,7 @@ section{position:relative}
   <div class="hero-media" data-hero-depth="0.42">
     <picture>
       <source media="(max-aspect-ratio: 4/5)" srcset="assets/poster-portrait.webp">
-      <img src="assets/poster-1080.webp" srcset="assets/poster-720.webp 1280w, assets/poster-1080.webp 1920w" sizes="100vw" alt="" fetchpriority="high" decoding="async">
+      <img src="assets/poster-1080.webp" srcset="assets/poster-720.webp 1280w, assets/poster-1080.webp 1920w" sizes="100vw" alt="Bakrene vodovodne cijevi s mjedenim ventilom i manometrom na tamnim pločicama" fetchpriority="high" decoding="async">
     </picture>
     <video id="heroVid" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
   </div>
@@ -471,9 +587,9 @@ section{position:relative}
         <small>Prema recenzijama na Google kartama.</small>
       </div>
     </div>
-    <div class="about-media" aria-hidden="true">
-      <div class="shot shot-a" data-speed="0.07"><img src="assets/valve.webp" srcset="assets/valve-600.webp 600w, assets/valve.webp 1200w" sizes="(max-width: 860px) 82vw, 40vw" width="1200" height="1000" alt="" loading="lazy" decoding="async"></div>
-      <div class="shot shot-b" data-speed="-0.1"><img src="assets/drop.webp" srcset="assets/drop-400.webp 400w, assets/drop.webp 800w" sizes="(max-width: 860px) 46vw, 22vw" width="800" height="1000" alt="" loading="lazy" decoding="async"></div>
+    <div class="about-media">
+      <div class="shot shot-a" data-speed="0.07"><img src="assets/valve.webp" srcset="assets/valve-600.webp 600w, assets/valve.webp 1200w" sizes="(max-width: 860px) 82vw, 40vw" width="1200" height="1000" alt="Mjedeni kuglasti ventil s plavom ručicom na bakrenoj cijevi" loading="lazy" decoding="async"></div>
+      <div class="shot shot-b" data-speed="-0.1"><img src="assets/drop.webp" srcset="assets/drop-400.webp 400w, assets/drop.webp 800w" sizes="(max-width: 860px) 46vw, 22vw" width="800" height="1000" alt="Kap vode na mjedenom priključku cijevi" loading="lazy" decoding="async"></div>
       <div class="tag-card" data-speed="-0.2"><small>Adresa</small><b>Ul. Rebar 83</b><span>Maksimir, Zagreb</span></div>
     </div>
   </div>
@@ -672,110 +788,6 @@ section{position:relative}
   <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&amp;destination=Vodoinstalater%20Zagreb%20-%20Instalomat%2C%20Ul.%20Rebar%2083%2C%2010000%20Zagreb" target="_blank" rel="noopener">Upute</a>
 </div>
 
-<script>
-(() => {
-  const d = document, root = d.documentElement, body = d.body;
-  body.classList.remove("no-js");
-  const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches && !/[?&]motion=1/.test(location.search);
-
-  // Hero video: pick the right encode for the screen, fade in over the identical poster frame
-  const vid = d.getElementById("heroVid"), toggle = d.getElementById("vidToggle");
-  const saveData = navigator.connection && navigator.connection.saveData;
-  const pickSrc = () => {
-    const portrait = innerWidth / innerHeight < 0.8;
-    if (portrait) return "assets/hero-portrait.mp4";
-    return innerWidth * Math.min(devicePixelRatio || 1, 2) > 1300 ? "assets/hero-1080.mp4" : "assets/hero-720.mp4";
-  };
-  const setToggle = (paused) => {
-    toggle.querySelector("span").textContent = paused ? "Pokreni video" : "Pauziraj video";
-    toggle.querySelector("svg").innerHTML = paused ? '<path d="M7 4.5v15l12-7.5z"/>' : '<path d="M6 5h4v14H6zM14 5h4v14h-4z"/>';
-  };
-  const startVideo = () => {
-    vid.src = pickSrc();
-    vid.addEventListener("playing", () => vid.classList.add("on"), { once: true });
-    const p = vid.play(); if (p && p.catch) p.catch(() => {});
-  };
-  toggle.hidden = false;
-  if (reduce || saveData) { setToggle(true); toggle.addEventListener("click", function once() { startVideo(); setToggle(false); toggle.removeEventListener("click", once); toggle.addEventListener("click", flip); }); }
-  else { addEventListener("load", startVideo, { once: true }); toggle.addEventListener("click", flip); }
-  function flip() { if (vid.paused) { vid.play(); setToggle(false); } else { vid.pause(); setToggle(true); } }
-  d.addEventListener("visibilitychange", () => { if (d.hidden) vid.pause(); else if (vid.src && toggle.querySelector("span").textContent === "Pauziraj video") vid.play().catch(() => {}); });
-
-  // Menu
-  const menuBtn = d.getElementById("menuBtn");
-  const setMenu = (open) => { body.classList.toggle("menu-open", open); menuBtn.setAttribute("aria-expanded", open); menuBtn.setAttribute("aria-label", open ? "Zatvori izbornik" : "Otvori izbornik"); };
-  menuBtn.addEventListener("click", () => setMenu(!body.classList.contains("menu-open")));
-  d.querySelectorAll(".mnav a").forEach((a) => a.addEventListener("click", () => setMenu(false)));
-  d.addEventListener("keydown", (e) => { if (e.key === "Escape") setMenu(false); });
-
-  // Opening hours status (Europe/Zagreb)
-  const hours = { 1: [7, 15], 2: [7, 15], 3: [7, 15], 4: [7, 15], 5: [7, 15], 6: [7, 13], 0: null };
-  const names = ["u nedjelju", "u ponedjeljak", "u utorak", "u srijedu", "u četvrtak", "u petak", "u subotu"];
-  const now = () => {
-    const parts = new Intl.DateTimeFormat("en-US", { timeZone: "Europe/Zagreb", weekday: "short", hour: "numeric", minute: "numeric", hour12: false }).formatToParts(new Date());
-    const get = (t) => parts.find((p) => p.type === t).value;
-    return { day: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].indexOf(get("weekday")), h: (+get("hour") % 24) + (+get("minute")) / 60 };
-  };
-  const status = () => {
-    const { day, h } = now(), t = hours[day];
-    if (t && h >= t[0] && h < t[1]) return { open: true, text: "Otvoreno do " + String(t[1]).padStart(2, "0") + ":00", short: "Otvoreno", day };
-    if (t && h < t[0]) return { open: false, text: "Zatvoreno · otvaramo danas u 07:00", short: "Zatvoreno", day };
-    for (let i = 1; i <= 7; i++) { const nd = (day + i) % 7; if (hours[nd]) return { open: false, text: "Zatvoreno · otvaramo " + (i === 1 ? "sutra" : names[nd]) + " u 07:00", short: "Zatvoreno", day }; }
-  };
-  const s = status();
-  d.querySelectorAll("[data-status]").forEach((el) => { el.textContent = s.text; el.classList.toggle("open", s.open); });
-  const pill = d.querySelector("[data-pill]"); pill.textContent = s.short; pill.classList.toggle("open", s.open);
-  const today = d.querySelector('#days [data-day="' + s.day + '"]'); if (today) today.classList.add("today");
-
-  // Map facade
-  d.getElementById("mapBtn").addEventListener("click", () => {
-    const f = d.createElement("iframe");
-    f.src = "https://www.google.com/maps?q=Vodoinstalater+Zagreb+-+Instalomat,+Ul.+Rebar+83,+10000+Zagreb&z=16&output=embed";
-    f.title = "Karta: Instalomat, Ul. Rebar 83, Zagreb"; f.loading = "lazy"; f.referrerPolicy = "no-referrer-when-downgrade";
-    d.getElementById("map").replaceChildren(f);
-  });
-
-  // Reveal on scroll
-  const io = new IntersectionObserver((es) => es.forEach((e) => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { rootMargin: "0px 0px -8% 0px", threshold: 0.12 });
-  d.querySelectorAll("[data-reveal]").forEach((el) => io.observe(el));
-
-  // Scroll-driven: header, progress, parallax (transform only), process pipe
-  const hdr = d.getElementById("hdr"), prog = d.getElementById("progress"), fab = d.getElementById("fab"), mbar = d.getElementById("mbar");
-  const heroLayers = [...d.querySelectorAll("[data-hero-depth]")];
-  const heroContent = d.querySelector(".hero-content");
-  const layers = [...d.querySelectorAll("[data-speed],[data-speed-x]")].map((el) => ({ el, scope: el.closest("section"), y: +(el.dataset.speed || 0), x: +(el.dataset.speedX || 0) }));
-  const steps = d.getElementById("steps"), stepEls = [...steps.querySelectorAll(".step")];
-  const ruler = d.querySelector(".spec-ruler");
-  let ticking = false, vh = innerHeight, k = innerWidth < 700 ? 0.6 : 1;
-  addEventListener("resize", () => { vh = innerHeight; k = innerWidth < 700 ? 0.6 : 1; update(); }, { passive: true });
-  function update() {
-    ticking = false;
-    const y = scrollY, max = root.scrollHeight - vh;
-    prog.style.transform = "scaleX(" + (max > 0 ? y / max : 0).toFixed(4) + ")";
-    hdr.classList.toggle("solid", y > 80);
-    const past = y > vh * 0.7;
-    fab.classList.toggle("show", past); mbar.classList.toggle("show", past);
-    // pipe fill in "Kako radimo"
-    const r = steps.getBoundingClientRect();
-    const p = Math.min(1, Math.max(0, (vh * 0.78 - r.top) / (r.height + vh * 0.25)));
-    steps.style.setProperty("--p", p.toFixed(3));
-    stepEls.forEach((el) => el.classList.toggle("lit", p >= +el.dataset.at));
-    if (reduce) return;
-    if (y < vh * 1.3) {
-      heroLayers.forEach((el) => { el.style.transform = "translate3d(0," + (y * el.dataset.heroDepth).toFixed(1) + "px,0)"; });
-      heroContent.style.opacity = Math.max(0, 1 - y / (vh * 0.75)).toFixed(3);
-      if (ruler) ruler.style.setProperty("--lvl", (0.62 - Math.min(y / vh, 1) * 0.5).toFixed(3));
-    }
-    for (const L of layers) {
-      const b = L.scope.getBoundingClientRect();
-      if (b.bottom < -200 || b.top > vh + 200) continue;
-      const c = b.top + b.height / 2 - vh / 2;
-      L.el.style.translate = (L.x ? (-c * L.x * k).toFixed(1) + "px " : "0 ") + (L.y ? (-c * L.y * k).toFixed(1) + "px" : "0");
-    }
-  }
-  addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
-  update();
-})();
-</script>
+<script src="assets/app.js"></script>
 </body>
 </html>
